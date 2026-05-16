@@ -6,9 +6,13 @@ Try to guess the secret number between 1 and 20 before your score reaches zero!
 
 ---
 
-## 🚀 Live Demo
+## 📸 Screenshot
 
-(اگر دیپلوی کردی اینجا لینک بگذار)
+![Game Preview](./preview.png)
+
+---
+
+## 🚀 Live Demo
 
 ---
 
@@ -75,7 +79,6 @@ index.html
 
 3. Get hints:
    - 📈 Too High
-
    - 📉 Too Low
 
 4. Try to find the correct number before score reaches 0
@@ -91,9 +94,7 @@ index.html
 # install dependencies
 
 npm install
-
 npm run dev
-
 npm run build
 ```
 
