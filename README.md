@@ -56,7 +56,7 @@ Try to guess the secret number between 1 and 20 before your score reaches zero!
 
 ## 📂 Project Structure
 
-````bash
+```bash
 
 src/
 
@@ -65,6 +65,7 @@ src/
  ├── style.scss
 
 index.html
+```
 
 ## 🎮 How to Play
 
@@ -73,7 +74,6 @@ index.html
 2. Click **Check**
 
 3. Get hints:
-
    - 📈 Too High
 
    - 📉 Too Low
@@ -92,14 +92,11 @@ index.html
 
 npm install
 
-# run project
-
 npm run dev
 
-# build for production
-
 npm run build
-````
+```
+
 ## 👨‍💻 Author
 
 Built with ❤️ by Arvin Azs
