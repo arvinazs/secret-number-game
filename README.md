@@ -14,6 +14,8 @@ Try to guess the secret number between 1 and 20 before your score reaches zero!
 
 ## 🚀 Live Demo
 
+🔗 Try it here: https://arvinazs.github.io/secret-number-game/
+
 ---
 
 ## 📸 Preview

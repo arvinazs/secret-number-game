@@ -3,12 +3,14 @@ node_modules/
 # build output
 dist/
 build/
+.parcel-cache/
 
 # logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 package-lock.json*
+
 
 # OS files
 .DS_Store
