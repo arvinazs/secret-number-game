@@ -1,5 +1,7 @@
 import './style.scss';
 
+document.addEventListener('DOMContentLoaded', function () {});
+
 const STATUS = {
   SUCCESS: 'success',
   ERROR: 'error',

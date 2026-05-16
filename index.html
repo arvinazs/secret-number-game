@@ -1,100 +1,117 @@
-<!DOCTYPE html><html lang=en><link rel=stylesheet href=/secret-number-game.7adc5785.css><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Guess My Number</title><body>
-    <div class=game>
-      <header class=game__header>
-        <h1 class=game__title>
-          🎯 Secret <span class=text--highlight>Number</span> Game
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number</title>
+  </head>
+
+  <body>
+    <div class="game">
+      <header class="game__header">
+        <h1 class="game__title">
+          🎯 Secret <span class="text--highlight">Number</span> Game
         </h1>
-        <p class=game__subtitle>
+        <p class="game__subtitle">
           I'm thinking of a number between
-          <span class=text--highlight>1 and 20</span>
+          <span class="text--highlight">1 and 20</span>
         </p>
       </header>
 
-      <main class=game__layout>
-        <section class=game__stats>
+      <main class="game__layout">
+        <section class="game__stats">
           <div class="card stats-card stats-card--highscore">
-            <div class=stats-card__header>
-              <span class="icon stats-card__icon">
-                <i data-lucide=trophy></i>
+            <div class="stats-card__header">
+              <span class="stats-card__icon icon">
+                <i data-lucide="trophy"></i>
               </span>
-              <span class=stats-card__label>Highscore</span>
+              <span class="stats-card__label">Highscore</span>
             </div>
-            <span class="js-highscore stats-card__value">0</span>
+            <span class="stats-card__value js-highscore">0</span>
           </div>
 
           <div class="card stats-card stats-card--score">
-            <div class=stats-card__header>
-              <span class="icon stats-card__icon">
-                <i data-lucide=star></i>
+            <div class="stats-card__header">
+              <span class="stats-card__icon icon">
+                <i data-lucide="star"></i>
               </span>
-              <span class=stats-card__label>Score</span>
+              <span class="stats-card__label">Score</span>
             </div>
-            <span class="js-score stats-card__value">20</span>
+            <span class="stats-card__value js-score">20</span>
           </div>
         </section>
 
-        
+        <!-- PLAY -->
 
-        <section class=game__play>
-          <div class=play-card__secret>?</div>
+        <section class="game__play">
+          <div class="play-card__secret">?</div>
 
-          <p class="center play-card__prompt">Enter your guess</p>
+          <p class="play-card__prompt center">Enter your guess</p>
 
-          <input type=number class=play-card__input placeholder="Type a number" min=1 max=20 step=1>
+          <input
+            type="number"
+            class="play-card__input"
+            placeholder="Type a number"
+            min="1"
+            max="20"
+            step="1"
+            placeholder="1 - 20"
+          />
 
-          <div class=play-card__actions>
+          <div class="play-card__actions">
             <button class="btn btn--primary js-check-btn">Check</button>
             <button class="btn btn--secondary js-again-btn">Again</button>
           </div>
         </section>
 
-        <section class="card game__feedback">
-          <h3 class=feedback-card__title>
-            <span class=icon>
-              <i data-lucide=message-circle-more></i>
+        <section class="game__feedback card">
+          <h3 class="feedback-card__title">
+            <span class="icon">
+              <i data-lucide="message-circle-more"></i>
             </span>
             Message
           </h3>
-          <p class=feedback-card__text>Start guessing...</p>
-          <span class=feedback-card__icon>
-            <i data-lucide=brain width=40 height=40></i>
+          <p class="feedback-card__text">Start guessing...</p>
+          <span class="feedback-card__icon">
+            <i data-lucide="brain" width="40" height="40"></i>
           </span>
-          <span class=feedback-card__hint> Tip: Higher or Lower? </span>
+          <span class="feedback-card__hint"> Tip: Higher or Lower? </span>
         </section>
 
-        
+        <!-- TIPS -->
 
         <section class="card game__tips">
-          <h3 class=tips-card__title>How to Play</h3>
+          <h3 class="tips-card__title">How to Play</h3>
 
-          <ul class=tips-card__list>
-            <li class=tips-card__item>
-              <span class="icon icon--target tips-card__icon">
-                <i data-lucide=target></i>
+          <ul class="tips-card__list">
+            <li class="tips-card__item">
+              <span class="tips-card__icon icon icon--target">
+                <i data-lucide="target"></i>
               </span>
-              <div class=tips-card__content>
-                <span class=tips-card__text>Guess a number</span>
-                <span class=tips-card__hint>between 1 and 20</span>
+              <div class="tips-card__content">
+                <span class="tips-card__text">Guess a number</span>
+                <span class="tips-card__hint">between 1 and 20</span>
               </div>
             </li>
 
-            <li class=tips-card__item>
-              <span class="icon icon--search tips-card__icon">
-                <i data-lucide=search></i>
+            <li class="tips-card__item">
+              <span class="tips-card__icon icon icon--search">
+                <i data-lucide="search"></i>
               </span>
-              <div class=tips-card__content>
-                <span class=tips-card__text>Get hints</span>
-                <span class=tips-card__hint>Higher or Lower</span>
+              <div class="tips-card__content">
+                <span class="tips-card__text">Get hints</span>
+                <span class="tips-card__hint">Higher or Lower</span>
               </div>
             </li>
 
-            <li class=tips-card__item>
-              <span class="icon icon--trophy tips-card__icon">
-                <i data-lucide=trophy></i>
+            <li class="tips-card__item">
+              <span class="tips-card__icon icon icon--trophy">
+                <i data-lucide="trophy"></i>
               </span>
-              <div class=tips-card__content>
-                <span class=tips-card__text>Reach 0 score</span>
-                <span class=tips-card__hint>to win the game!</span>
+              <div class="tips-card__content">
+                <span class="tips-card__text">Reach 0 score</span>
+                <span class="tips-card__hint">to win the game!</span>
               </div>
             </li>
           </ul>
@@ -102,26 +119,30 @@
       </main>
     </div>
 
-    <div class="hidden js-modal modal">
-      <div class=modal__overlay></div>
-      <div class=modal__content>
-        <div class="js-modal-close modal__close"><i data-lucide=x></i></div>
-        <h2 class="js-modal-title modal__title">❌ Game Over</h2>
-        <p class="js-modal-message modal__message">You lost the Game !</p>
+    <div class="modal hidden js-modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <div class="modal__close js-modal-close"><i data-lucide="x"></i></div>
+        <h2 class="modal__title js-modal-title">❌ Game Over</h2>
+        <p class="modal__message js-modal-message">You lost the Game !</p>
         <button class="btn js-modal-again-btn">Play Again</button>
       </div>
     </div>
 
-    <div class=mobile-warning>
-      <i data-lucide=computer></i>
+    <div class="mobile-warning">
+      <i data-lucide="computer"></i>
       <p>
         Desktop Only Experience This game is designed for desktop screens only.
       </p>
     </div>
 
-    <script type=module src=/secret-number-game.7550ac9a.js></script>
-    <script src=https://unpkg.com/lucide@latest></script>
+    <script type="module" src="src/index.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-    <script>lucide.createIcons();</script>
-  
-
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        lucide.createIcons();
+      });
+    </script>
+  </body>
+</html>
