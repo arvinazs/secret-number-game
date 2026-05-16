@@ -1,60 +1,62 @@
-# 🎯 Guess My Number
+# 🎯 Guess My Number Game
 
-A simple number guessing game built with Vanilla JavaScript and SCSS.
+A fun and interactive number guessing game built with vanilla JavaScript, HTML, and SCSS.
 
----
-
-## 🚀 Features
-
-- Generate random number between 1 and 20  
-
-- Score system (starts from 20)  
-
-- Highscore tracking  
-
-- Feedback messages (Too High / Too Low / Correct)  
-
-- Modal for game states (Game Over / Alerts)  
-
-- Desktop-only warning for mobile users  
-
-- Clean SCSS design system  
+Try to guess the secret number between 1 and 20 before your score reaches zero!
 
 ---
 
-## 🧠 How to Play
+## 🚀 Live Demo
 
-1. Enter a number between **1 and 20**  
+(اگر دیپلوی کردی اینجا لینک بگذار)
 
-2. Click **Check**  
+---
 
-3. Get hints:
+## 📸 Preview
 
-   - 📈 Too High  
+🖥️ Desktop-first UI with modern dark theme
 
-   - 📉 Too Low  
+💡 Responsive warning for mobile users
 
-4. Try to guess the correct number  
+---
 
-5. Reach the highest score possible 🏆  
+## 🧠 Features
+
+- 🎲 Random number generation (1–20)
+
+- 📉 Score system with decrement logic
+
+- 🏆 Highscore tracking
+
+- 💬 Dynamic feedback messages
+
+- ⚡ Modal system for game states (Game Over / Finished / Empty input)
+
+- 📱 Mobile detection warning (desktop-only experience)
+
+- 🎨 Modern UI with SCSS design system
+
+- ⌨️ Keyboard support (ESC to close modal)
 
 ---
 
 ## 🛠️ Tech Stack
 
-- HTML5  
+- HTML5
 
-- SCSS  
+- SCSS (custom design system + variables)
 
-- JavaScript (ES Modules)  
+- JavaScript (ES Modules)
 
-- Parcel Bundler  
+- Parcel (bundler)
+
+- Lucide Icons
 
 ---
 
 ## 📂 Project Structure
 
-```bash
+````bash
 
 src/
 
@@ -63,3 +65,41 @@ src/
  ├── style.scss
 
 index.html
+
+## 🎮 How to Play
+
+1. Enter a number between 1 and 20
+
+2. Click **Check**
+
+3. Get hints:
+
+   - 📈 Too High
+
+   - 📉 Too Low
+
+4. Try to find the correct number before score reaches 0
+
+5. Beat your highscore!
+
+---
+
+## ⚙️ Installation & Run
+
+```bash
+
+# install dependencies
+
+npm install
+
+# run project
+
+npm run dev
+
+# build for production
+
+npm run build
+````
+## 👨‍💻 Author
+
+Built with ❤️ by Arvin Azs
