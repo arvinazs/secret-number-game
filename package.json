@@ -4,7 +4,8 @@
   "description": "Interactive number guessing game using Vanilla JavaScript and Parcel.",
   "scripts": {
     "dev": "parcel index.html --port 3000",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "preview": "serve dist"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,7 @@
   },
   "homepage": "https://github.com/arvinazs/secret-number-game#readme",
   "dependencies": {
-    "lucide": "^1.14.0",
+    "lucide": "^1.16.0",
     "parcel": "^2.16.4"
   },
   "devDependencies": {

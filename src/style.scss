@@ -19,7 +19,7 @@
   --color-accent: #a47ff8;
 
   /* States */
-  --color-danger: #e92d71;
+  --color-danger: #ff4170;
   --color-success: #22c55e;
   --color-warning: #f59e0b;
   --color-blue: #0bb2f5;
@@ -158,6 +158,7 @@ body {
 }
 
 .game {
+  display: block;
   width: 90%;
   max-width: var(--container-width);
 
@@ -296,14 +297,19 @@ body {
           font-weight: var(--font-weight-bold);
           height: 70px;
           font-size: var(--font-size-md);
-          color: var(--color-text-primary);
+          color: var(--color-bg-primary);
+          transition: opacity 0.4s ease;
+
+          &:hover {
+            opacity: 0.8;
+          }
 
           &--primary {
-            background: var(--color-primary);
+            background: var(--color-accent);
           }
 
           &--secondary {
-            background-color: var(--color-danger);
+            background-color: var(--color-blue);
           }
         }
       }
@@ -457,6 +463,10 @@ body {
 }
 
 .mobile-warning {
+  display: none;
+}
+
+.mobile-warning {
   .lucide {
     width: 100px;
     height: 70px;
@@ -468,4 +478,14 @@ body {
   padding: 20px;
   font-size: var(--font-size-2xl);
   color: var(--color-text-primary);
+}
+
+@media (max-width: 768px) {
+  .game {
+    display: none;
+  }
+
+  .mobile-warning {
+    display: block;
+  }
 }

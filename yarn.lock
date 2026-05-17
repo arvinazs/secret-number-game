@@ -1262,10 +1262,10 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
-lucide@^1.14.0:
-  version "1.14.0"
-  resolved "https://registry.npmmirror.com/lucide/-/lucide-1.14.0.tgz"
-  integrity sha512-IoRC3lHwemJWvsXKcHK90hkgY4h1HGztBL63w2XwFtIu8gFDPp4/kiuqVtlN3vaM9bxsLQ4ZUBJfGsbKFaB2IA==
+lucide@^1.16.0:
+  version "1.16.0"
+  resolved "https://registry.npmjs.org/lucide/-/lucide-1.16.0.tgz"
+  integrity sha512-20QvduCJTB7e7K9WVvoLBuKPsYZ8d6ptwe9PIdTFiZmjVTPdFWQreBNyNCM9QQtGnqHR0PLiEQdxyhYsL1LdoA==
 
 minimatch@^10.2.4:
   version "10.2.5"
@@ -1372,7 +1372,7 @@ p-locate@^5.0.0:
 
 parcel@^2.16.4:
   version "2.16.4"
-  resolved "https://registry.npmmirror.com/parcel/-/parcel-2.16.4.tgz"
+  resolved "https://registry.npmjs.org/parcel/-/parcel-2.16.4.tgz"
   integrity sha512-RQlrqs4ujYNJpTQi+dITqPKNhRWEqpjPd1YBcGp50Wy3FcJHpwu0/iRm7XWz2dKU/Bwp2qCcVYPIeEDYi2uOUw==
   dependencies:
     "@parcel/config-default" "2.16.4"
