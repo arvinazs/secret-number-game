@@ -1,4 +1,4 @@
-# 🎯 Guess My Number Game
+# 🎯 Secret Number Game
 
 A fun and interactive number guessing game built with vanilla JavaScript, HTML, and SCSS.
 
