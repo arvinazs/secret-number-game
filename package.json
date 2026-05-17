@@ -26,13 +26,16 @@
     "url": "https://github.com/arvinazs/secret-number-game/issues"
   },
   "homepage": "https://github.com/arvinazs/secret-number-game#readme",
+  "dependencies": {
+    "lucide": "^1.16.0",
+    "parcel": "^2.16.4"
+  },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@parcel/transformer-sass": "^2.16.4",
     "eslint": "^10.4.0",
     "gh-pages": "^6.3.0",
     "globals": "^17.6.0",
-    "parcel": "^2.16.4",
     "serve": "^14.2.6"
   }
 }

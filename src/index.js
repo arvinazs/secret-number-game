@@ -1,6 +1,7 @@
+import { createIcons, icons } from 'lucide';
 import './style.scss';
 
-document.addEventListener('DOMContentLoaded', function () {});
+createIcons({ icons });
 
 const STATUS = {
   SUCCESS: 'success',
@@ -27,10 +28,6 @@ const modalOverlayEl = document.querySelector('.modal__overlay');
 const modalClose = document.querySelector('.js-modal-close');
 const modalBtnAgain = document.querySelector('.js-modal-again-btn');
 
-const mediaQuery = window.matchMedia('(max-width: 768px)');
-const gameEl = document.querySelector('.game');
-const warningEl = document.querySelector('.mobile-warning');
-
 const setStatus = (type) => {
   messageEl.classList.remove(STATUS.WARNING, STATUS.ERROR, STATUS.SUCCESS);
 
@@ -53,25 +50,28 @@ const closeModal = function () {
   modalEl.classList.add('hidden');
 };
 
+inputEl.addEventListener('input', () => {
+  const value = Number(inputEl.value);
+  if (value > 20) {
+    inputEl.value = 20;
+  }
+  if (value < 1) {
+    inputEl.value = 1;
+  }
+});
+
 btnCheck.addEventListener('click', function () {
-  inputEl.addEventListener('input', () => {
-    const value = Number(inputEl.value);
-    if (value > 20) {
-      inputEl.value = 20;
-    }
-    if (value < 1) {
-      inputEl.value = 1;
-    }
-  });
   const getNumber = Number(inputEl.value);
 
   if (isGameFinished) {
     openModal('Game Finished', 'The game has ended.');
+    modalBtnAgain.textContent = 'Play Again';
     return;
   }
 
   if (!getNumber) {
     openModal('Empty Number !', 'Please enter a number between 1 and 20.');
+    modalBtnAgain.textContent = 'OK';
     return;
   }
 
@@ -92,6 +92,7 @@ btnCheck.addEventListener('click', function () {
       scoreEl.textContent = score;
     } else {
       openModal('Game Over', 'You lost the Game !');
+      modalBtnAgain.textContent = 'Play Again';
       setStatus(STATUS.ERROR);
       scoreEl.textContent = 0;
     }
@@ -101,7 +102,6 @@ btnCheck.addEventListener('click', function () {
 const handleButtonAgain = function () {
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   score = 20;
-  highscore = 0;
   isGameFinished = false;
 
   inputEl.value = '';
@@ -133,18 +133,3 @@ document.addEventListener('keydown', function (e) {
     closeModal();
   }
 });
-
-const handleResponsiveBlock = (e) => {
-  if (e.matches) {
-    gameEl.style.display = 'none';
-    modalEl.style.display = 'none';
-    warningEl.style.display = 'block';
-  } else {
-    gameEl.style.display = 'block';
-    modalEl.style.display = '';
-    warningEl.style.display = 'none';
-  }
-};
-
-handleResponsiveBlock(mediaQuery);
-mediaQuery.addEventListener('change', handleResponsiveBlock);
